@@ -1,5 +1,9 @@
 
 def fibonacci(n):
+	'''
+	Calculate the nth fibonacci number using recursion and memorisation
+	'''
+
 	if n ==0:
 		return 0
 	if n ==1:
