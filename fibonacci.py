@@ -11,8 +11,13 @@ def fibonacci(n):
 	return fibonacci(n-1) + fibonacci(n-2)
 
 def fib_gen(n):
+	'''
+	A generator yielding the first n fibonacci numbers
+	'''
+
 	for i in range(n):
 		yield fibonacci(i)
 
 if __name__ == '__main__':
-	print(fibonacci(35))
+	for n in fib_gen(20):
+		print(n)
